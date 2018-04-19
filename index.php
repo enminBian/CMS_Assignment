@@ -20,6 +20,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="admin/css/main.css">
 <title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
 </head>
 <body>

@@ -2,7 +2,7 @@
   function single_edit($tbl,$col,$id) {
     $result = getSingle($tbl, $col, $id);
     $getResult = mysqli_fetch_array($result);
-    echo "<form action=\"phpscripts/editall.php\" method=\"post\">";
+    echo "<form action=\"phpscripts/editall.php\" enctype=\"multipart/form-data\" method=\"post\">";
     echo "<input hidden name=\"tbl\" value=\"{$tbl}\">";
     echo "<input hidden name=\"col\" value=\"{$col}\">";
     echo "<input hidden name=\"id\" value=\"{$id}\">";

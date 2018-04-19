@@ -16,7 +16,6 @@
 <body>
 	<?php
     echo single_edit("tbl_movies","movies_id",1);
-		phpinfo();
 	?>
 </body>
 </html>

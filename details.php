@@ -21,7 +21,12 @@
 				<h2>{$row['movies_title']}</h2>
 				<p>{$row['movies_year']}</p>
 				<p>{$row['movies_storyline']}</p>
-				<a href=\"index.php\">Back...</a>";
+				<video controls>
+				<source src=\"video/{$row['movies_trailer']}\" type\"video/mp4\"/>
+				</video>
+				<a href=\"admin/phpscripts/caller_2.php?edit_id=editmovies&id={$row['movies_id']}\" id=\"editcontent\">Edit Infor</a>
+
+				<a href=\"index.php\">Back</a>";
 		}else{
 			echo "<p class=\"error\">{$getSingle}</p>";
 		}
